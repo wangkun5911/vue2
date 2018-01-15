@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" style="opacity:0;">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title id="indexHtml">华方智慧云诊所机构管理后台</title>
+  	<link rel="stylesheet" href="./src/lib/js/pagination/pagination.css?version=a1bfb10c11b851e72ec2" />
+    <link rel="stylesheet" href="./src/css/jqueryui.css?version=a1bfb10c11b851e72ec2">
+    <link rel="stylesheet" href="./src/lib/base/select2/select2.min.css?version=a1bfb10c11b851e72ec2">
+  	<link rel="stylesheet" href="./src/lib/base/font/iconfont.css?version=a1bfb10c11b851e72ec2" />
+  	<link rel="stylesheet" href="./src/css/style-treatment.css?version=a1bfb10c11b851e72ec2" />
+  	<link rel="stylesheet" href="./src/lib/base/fancybox/jquery.fancybox.min.css?version=a1bfb10c11b851e72ec2">
+  	<link rel="stylesheet" href="./src/css/style.css?version=a1bfb10c11b851e72ec2" />
+   	<script src="./src/lib/base/jquery-1.11.3.min.js?version=a1bfb10c11b851e72ec2"></script>
+  	<script src="./src/lib/base/jQuery.md5.js?version=a1bfb10c11b851e72ec2"></script>
+  	<script src="./src/lib/base/jquery.cookie.js?version=a1bfb10c11b851e72ec2"></script>
+  	<script src="./src/lib/base/rem.js?version=a1bfb10c11b851e72ec2"></script>
+  	<script src="./src/lib/js/common.js?version=a1bfb10c11b851e72ec2"></script>
+  	<script src="./src/lib/base/jqueryui.js?version=a1bfb10c11b851e72ec2"></script>
+    <script src="./src/lib/base/select2/select2.full.js?version=a1bfb10c11b851e72ec2"></script>
+  	<script src="./src/lib/base/china.js?version=a1bfb10c11b851e72ec2"></script>
+  	<script src="./src/lib/js/pagination/pagination.min.js?version=a1bfb10c11b851e72ec2"></script>
+  	<script src="./src/lib/base/upload/spark-md5.js?version=a1bfb10c11b851e72ec2"></script>
+  	<script src="./src/lib/base/upload/async.min.js?version=a1bfb10c11b851e72ec2"></script>
+  	<script src="./src/lib/base/upload/lib/upyun-mu.js?version=a1bfb10c11b851e72ec2"></script>
+  	<script src="./src/lib/base/fancybox/jquery.fancybox.min.js?version=a1bfb10c11b851e72ec2"></script>
+	  <script src="./src/lib/base/jquery.media.js?version=a1bfb10c11b851e72ec2"></script>
+    <script src="./src/lib/base/highcharts.js?version=a1bfb10c11b851e72ec2"></script>
+	  <script src="./src/lib/base/grouped-categories.js?version=a1bfb10c11b851e72ec2"></script>
+  </head>
+  <body>
+    <div id="app" v-cloak>
+		<myheader></myheader>
+		<div id="org_main">
+		<!--侧边栏导航-->
+			<nav  class="sidebar">
+				<!-- <router-link to="/securityCenter"><i class="iconfont icon-anquan"></i>权限管理</router-link>
+				<router-link to="/orgManage"><i class="iconfont icon-shezhi"></i>机构配置</router-link>
+				<router-link to="/patientInforBase"><i class="iconfont icon-900000013"></i>患者管理</router-link>
+				<router-link to="/serviceItemSettings"><i class="iconfont icon-guanli"></i>服务项目管理</router-link>
+				<router-link to="/procuremAudit"><i class="iconfont icon-caigou"></i>药品采购审核</router-link>
+				<router-link to="/abnormalStorage"><i class="iconfont icon-yichang"></i>出入库审核</router-link>
+				<router-link to="/medicineManage"><i class="iconfont icon-yaopinbaodian"></i>药品字典管理</router-link>
+				<router-link to="/reportManage"><i class="iconfont icon-baobiao"></i>报表管理</router-link>
+				<router-link to="/diseaseManage"><i class="iconfont icon-jibingbaike"></i>疾病库管理</router-link>
+				<router-link to="/allergyManage"><i class="iconfont icon-heminyuanlogotuxing"></i>过敏管理</router-link> -->
+				
+				<router-link v-for="el in copyRight" :to="'/'+el.url"><i class="iconfont" :class="'icon-'+icon_data[el.name]"></i>{{el.name}}</router-link>
+			</nav>
+			<router-view v-cloak></router-view>
+		</div>
+	</div>
+	<div id="footer">
+		<p>©2016 HOFON 版权所有 浙ICP备07025272号-3</p>
+	</div>
+	<script src="./dist/build.js?version=a1bfb10c11b851e72ec2"></script>
+  </body>
+</html>
